@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kauan Oliveira Sousa — Desenvolvedor</title>
+<meta name="description" content="Portfólio de Kauan Oliveira Sousa: desenvolvedor, estudante de ADS e de cibersegurança. Projetos em Python, JavaScript e C.">
+<meta name="theme-color" content="#020a04">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kauan Oliveira Sousa — Desenvolvedor">
+<meta property="og:description" content="Projetos em Python e JavaScript, estudos de Linux e cibersegurança.">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23020a04'/%3E%3Ctext x='8' y='42' font-family='monospace' font-size='30' font-weight='bold' fill='%2300ff66'%3E%3E_%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="rain" aria-hidden="true"></canvas>
+
+<nav>
+  <a class="logo" href="#topo">&gt;_ kauan.dev</a>
+  <ul>
+    <li><a href="#sobre">sobre</a></li>
+    <li><a href="#formacao">formação</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#cyber">cybersec</a></li>
+    <li><a href="#projetos">projetos</a></li>
+    <li><a href="#certificados">certificados</a></li>
+    <li><a href="#contato">contato</a></li>
+  </ul>
+  <button id="theme" class="themebtn" type="button" aria-label="Alternar tema claro/escuro">◐</button>
+</nav>
+
+<header id="topo" class="wrap hero">
+  <div class="term">
+    <div class="bar"><i></i><i></i><i></i><span>kauan@portfolio: ~</span></div>
+    <div class="body">
+      <div class="prompt"><b>$</b> whoami</div>
+      <h1>Kauan <em>Oliveira</em> Sousa</h1>
+      <div class="role"><span id="typed"></span><span class="cursor"></span></div>
+      <p class="lead">Desenvolvedor apaixonado por transformar lógica em código limpo — do baixo nível em C até aplicações web com Node.js — e estudante de Análise e Desenvolvimento de Sistemas na Cruzeiro do Sul, com foco em cibersegurança, Linux e Kali Linux.</p>
+      <div class="btns">
+        <a class="btn solid" href="#projetos">ver projetos</a>
+        <a class="btn" href="#certificados">certificados</a>
+        <a class="btn" href="#contato">falar comigo</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="sobre">
+    <h2 class="title">sobre</h2>
+    <div class="about">
+      <div class="card">
+        <p>Olá! Eu sou o <strong>Kauan</strong>, desenvolvedor focado em aprender sempre e construir soluções que funcionam de verdade. Trabalho com <strong>Python</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>HTML</strong>, <strong>CSS</strong> e <strong>C</strong>.</p>
+        <p>Estou cursando <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong> na <strong>Cruzeiro do Sul</strong> e coloco o que aprendo em prática construindo projetos. Por fora da faculdade, também estudo <strong>cibersegurança</strong> e uso <strong>Linux</strong> e <strong>Kali Linux</strong> no dia a dia — isso me ajuda a entender como os sistemas funcionam por baixo dos panos e a escrever código mais seguro.</p>
+      </div>
+      <div class="card code"><span class="k">const</span> kauan = {
+  nome: <span class="s">"Kauan Oliveira Sousa"</span>,
+  foco: [<span class="s">"Full Stack"</span>, <span class="s">"Front-end"</span>, <span class="s">"Lógica"</span>],
+  stack: [<span class="s">"Python"</span>, <span class="s">"JS"</span>, <span class="s">"C"</span>],
+  os: [<span class="s">"Linux"</span>, <span class="s">"Kali"</span>],
+  estudando: <span class="s">"cibersegurança"</span>,
+  curso: <span class="s">"ADS"</span>
+};</div>
+    </div>
+  </section>
+
+  <section id="formacao">
+    <h2 class="title">formação</h2>
+    <div class="card">
+      <div class="prompt"><b>$</b> cat formacao.txt</div>
+<pre class="out">
+<span class="g">[+]</span> curso ........... Análise e Desenvolvimento de Sistemas
+<span class="g">[+]</span> instituição .... Universidade Cruzeiro do Sul
+<span class="g">[+]</span> status ......... cursando
+<span class="g">[+]</span> foco ........... desenvolvimento de software e web
+</pre>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="title">skills</h2>
+    <div class="grid" id="skills-grid"></div>
+  </section>
+
+  <section id="cyber">
+    <h2 class="title">cibersegurança</h2>
+    <div class="cy">
+      <div class="card">
+        <h3>&gt; o que eu estudo</h3>
+        <p class="area"><b>Redes:</b> protocolos, portas, serviços e tráfego.</p>
+        <p class="area"><b>Linux:</b> terminal, permissões, processos e automação com shell script.</p>
+        <p class="area"><b>Segurança ofensiva:</b> reconhecimento e análise de vulnerabilidades em laboratórios e ambientes autorizados.</p>
+        <p class="area"><b>Segurança defensiva:</b> boas práticas, hardening e código seguro.</p>
+        <h3 style="margin-top:18px">&gt; ferramentas</h3>
+        <span class="tag">Kali Linux</span><span class="tag">Nmap</span><span class="tag">Wireshark</span><span class="tag">Bash</span>
+      </div>
+      <div class="card">
+        <div class="prompt"><b>kauan@kali</b>:~$ cat status.txt</div>
+<pre class="out">
+<span class="g">[+]</span> sistema ........ Linux / Kali Linux
+<span class="g">[+]</span> linguagens ..... Python, C, Bash, JS
+<span class="g">[+]</span> foco ........... redes e pentest ético
+<span class="g">[+]</span> postura ........ uso ético e autorizado
+<span class="g">[~]</span> status ......... em evolução constante
+</pre>
+        <div class="prompt"><b>kauan@kali</b>:~$ <span class="cursor"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <h2 class="title">projetos</h2>
+    <div class="grid">
+      <article class="card proj"><h3>pokedex/</h3><p>Pokédex desenvolvida com HTML, CSS e JavaScript.</p><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><br><a href="https://github.com/Settby/Pokedex" target="_blank" rel="noopener" style="font-size:13px">&gt; ver código</a></article>
+      <article class="card proj"><h3>projeto-mario/</h3><p>Simulador de corridas do Mario Kart desenvolvido em Node.js durante os estudos na DIO, aplicando lógica de programação, objetos e funções.</p><span class="tag">Node.js</span><span class="tag">JavaScript</span><br><a href="https://github.com/Settby/projeto-mario" target="_blank" rel="noopener" style="font-size:13px">&gt; ver código</a></article>
+      <article class="card proj"><h3>sistema-estoque/</h3><p>Sistema de controle de estoque de aparelhos com banco SQLite e impressão de etiquetas Zebra.</p><span class="tag">Python</span><span class="tag">SQLite</span><br><a href="https://github.com/Settby/sistema-estoque" target="_blank" rel="noopener" style="font-size:13px">&gt; ver código</a></article>
+      <article class="card proj"><h3>analise-de-logs/</h3><p>Projeto da DIO usando o NotebookLM para estudo de logs e detecção de ameaças em cibersegurança.</p><span class="tag">NotebookLM</span><span class="tag">Cibersegurança</span><br><a href="https://github.com/Settby/notebooklm-cybersecurity-log-analysis" target="_blank" rel="noopener" style="font-size:13px">&gt; ver código</a></article>
+    </div>
+  </section>
+
+  <section id="certificados">
+    <h2 class="title">certificados</h2>
+    <div class="grid" id="certs"></div>
+  </section>
+
+  <section id="contato" class="contact">
+    <h2 class="title">contato</h2>
+    <div class="card">
+      <a class="row" href="mailto:kauanoliveira1507@gmail.com"><span>email</span><span>kauanoliveira1507@gmail.com</span></a>
+      <a class="row" href="https://github.com/Settby" target="_blank" rel="noopener"><span>github</span><span>github.com/Settby</span></a>
+      <a class="row" href="https://www.linkedin.com/in/kauanoliveira96/" target="_blank" rel="noopener"><span>linkedin</span><span>linkedin.com/in/kauanoliveira96</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> Kauan Oliveira Sousa — feito com HTML, CSS e JavaScript <span style="color:var(--accent)">&lt;/&gt;</span></footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
